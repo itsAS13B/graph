@@ -234,6 +234,34 @@ y: ['261.472','175.515','151.609','138.112','134.247','130.448','116.113'],
   name:'Distortion2'
 };
 
+var some_guy4444 = {
+x: ['2020-01-11','2020-01-14','2020-01-24','2020-02-03','2020-06-26','2020-06-28','2020-07-06','2020-07-08','2020-07-12','2020-07-18','2020-07-21','2020-07-25','2020-07-31','2020-08-02','2020-08-06','2020-08-15','2020-08-16','2020-08-25','2020-08-29','2020-10-25','2020-10-25','2020-10-27','2020-11-08','2020-11-29','2020-12-11'],
+y: ['166.786','146.888','133.72','127.682','118.639','116.913','112.574','109.478','108.804','107.663','104.783','103.373','101.073','99.537','95.396','95.136','94.416','93.606','88.937','88.808','87.994','85.868','85.595','84.189','81.775'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'Some_guy4444'
+};
+
+var shamrock = {
+x: ['2020-06-29','2020-07-25','2020-08-12','2020-11-18'],
+y: ['132.798','115.73','109.345','90.157'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'Shamrock'
+};
+
+var vanya = {
+x: ['2018-02-14','2018-03-03','2018-03-21','2018-06-27','2018-07-22','2018-09-23','2018-11-08','2019-01-08','2019-05-20','2020-06-18','2020-07-03','2020-07-05'],
+y: ['145.761','138.92','129.604','121.024','117.235','107.509','103.908','102.469','99.881','98.832','97.94','94.024'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'Vanya'
+};
+
+var isuzu = {
+x: ['2020-01-21','2020-06-19','2020-09-24'],
+y: ['109.922','104.888','97.443'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'isuZu'
+};
+
 var layout = {
   title: {
     text:'GOI Interactive Player Progression Graph',
@@ -254,14 +282,14 @@ var layout = {
 		  size: 13 }
 	  },
 	  yaxis: {
-		title: 'T I M E (in seconds)',
+		title: 'T I M E',
 		titlefont: {
 		  family: 'Arial',
 		  size: 13 }
 	  },
  };
  
-var data = [blastbolt,papalouie,stillow,yckzss216,tanaka,rhetor1k,the_head_obamid,duanhuaxian,fmm222,grossi,rengj,fuff,crumpet,squillybobjoe,peanut,oreo,sky,hongcha,zabbadabbadoo,as13b,eclipse,pixic,valmerix,norishio,lockness06,mohida,lumonen,distortion2];
+var data = [blastbolt,papalouie,stillow,yckzss216,tanaka,rhetor1k,the_head_obamid,duanhuaxian,fmm222,grossi,rengj,fuff,crumpet,squillybobjoe,peanut,oreo,sky,hongcha,zabbadabbadoo,as13b,eclipse,pixic,valmerix,norishio,lockness06,mohida,lumonen,distortion2,some_guy4444,shamrock,vanya,isuzu];
 
 Plotly.newPlot('myDiv', data , layout);
 
