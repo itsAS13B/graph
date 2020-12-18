@@ -520,6 +520,41 @@ y: ['154.072','122.757','118.501','112.053','99.984'],
   name:'xHydrosis'
 };
 
+var aggressivecombo = {
+x: ['2020-01-01','2020-01-19','2020-01-20','2020-01-22','2020-02-03','2020-02-08','2020-02-21','2020-03-03','2020-08-24','2020-08-28','2020-08-31','2020-09-01','2020-09-03'],
+y: ['200.46','178.297','149.831','141.4','132.851','128.101','119.993','116.027','115.50200000000001','112.28','109.074','107.068','100.398'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'AggressiveCombo'
+};
+
+var pata3322 = {
+x: ['2018-02-26','2018-03-07','2018-03-20','2018-03-24','2018-03-31','2018-04-10','2018-04-18','2018-05-11','2018-07-21','2018-07-28','2018-08-30','2018-09-04','2018-09-30','2018-10-04','2018-11-10','2019-01-23'],
+y: ['212.373','192.011','175.231','155.075','147.469','128.385','121.314','114.335','109.15','104.948','101.721','99.371','98.32','97.692','96.631','93.722'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'pata3322'
+};
+
+var IAMamount = {
+x: ['2018-05-14','2018-05-16','2018-06-13','2018-06-19','2018-06-20','2018-07-05','2018-07-31','2018-08-07','2018-09-17','2018-11-11','2018-11-30','2018-12-03'],
+y: ['181.583','179.476','158.202','153.943','149.885','135.625','127.945','118.796','114.883','105.726','104.414','99.558'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'IAMamount'
+};
+
+var yori_wisp = {
+x: ['2020-08-18','2020-09-18','2020-09-24','2020-10-03','2020-10-08','2020-11-16','2020-11-18','2020-12-10'],
+y: ['138.885','128.602','125.161','119.529','114.744','112.839','104.078','102.955'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'yori_wisp'
+};
+
+var emiledu = {
+x: ['2018-08-21','2018-10-21','2018-12-18','2019-01-03','2019-02-20','2019-05-16','2019-10-07','2019-11-25','2019-12-21'],
+y: ['286.475','171.021','156.415','151.863','139.954','131.064','123.074','119.278','112.486'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'emiledu'
+};
+
 var layout = {
   title: {
     text:'GOI Interactive Player Progression Graph',
@@ -547,7 +582,7 @@ var layout = {
 	  },
  };
  
-var data = [blastbolt,papalouie,stillow,yckzss216,tanaka,rhetor1k,the_head_obamid,duanhuaxian,fmm222,grossi,rengj,fuff,crumpet,squillybobjoe,peanut,oreo,sky,hongcha,zabbadabbadoo,as13b,eclipse,pixic,valmerix,norishio,lockness06,mohida,lumonen,some_guy4444,shamrock,vanya,isuzu,leviathan307,alphi,relas,codyumm,aurora,boogybam,schoko,hmmmmm,keronari,monty,ultragirl,trixo,batfish,distortion2,calamity,wes,zilch,xalvet,ys,treebo,arusenti,deadeye,aivv,asdf,clappv,chip,kotobukiman,anjo,nicholas132,sowedu,dankman,seedmaster,_20dan03,sladke,yeet,chory,narenkat,hydrosis];
+var data = [blastbolt,papalouie,stillow,yckzss216,tanaka,rhetor1k,the_head_obamid,duanhuaxian,fmm222,grossi,rengj,fuff,crumpet,squillybobjoe,peanut,oreo,sky,hongcha,zabbadabbadoo,as13b,eclipse,pixic,valmerix,norishio,lockness06,mohida,lumonen,some_guy4444,shamrock,vanya,isuzu,leviathan307,alphi,relas,codyumm,aurora,boogybam,schoko,hmmmmm,keronari,monty,ultragirl,trixo,batfish,distortion2,calamity,wes,zilch,xalvet,ys,treebo,arusenti,deadeye,aivv,asdf,clappv,chip,kotobukiman,anjo,nicholas132,sowedu,dankman,seedmaster,_20dan03,sladke,yeet,chory,narenkat,hydrosis,aggressivecombo,pata3322,IAMamount,yori_wisp,emiledu];
 
 Plotly.newPlot('myDiv', data , layout);
 
