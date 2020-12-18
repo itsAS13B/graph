@@ -1,0 +1,212 @@
+<head>
+
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GOI Interactive Player Progression Graph</title>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+	<style>
+	body{
+	background: url("https://www.speedrun.com/themes/goiwbf/background.png?v=bd30d704");
+	background-position-y: -207px;
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat;
+	}
+	</style>
+</head>
+
+<body>
+<div class="row" style="width: 86%;height: 13px;padding-left: 26;padding-top: 26;"> <div class="col-md-1"> <a href="https://www.twitch.tv/as13b" target="_blank"> <img style="width: 222px;height: 39px;opacity: 0.7;" src="https://itsas13b.github.io/logo.png"> </a> </div>  </div>
+	<center>
+	<br><br><br>
+	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+	</center>
+<script>
+
+var AggressiveCombo = {
+x: ['2020-01-01','2020-01-19','2020-01-20','2020-01-22','2020-02-03','2020-02-08','2020-02-21','2020-03-03','2020-08-24','2020-08-28','2020-08-31','2020-09-01','2020-09-03'],
+y: ['200.46','178.297','149.831','141.4','132.851','128.101','119.993','116.027','115.50200000000001','112.28','109.074','107.068','100.398'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'AggressiveCombo'
+};
+
+var Relas  = {
+x: ['2019-11-20','2019-11-23','2019-11-25','2019-11-29','2019-12-01','2019-12-06','2019-12-11','2019-12-25','2019-12-31','2020-01-06','2020-01-18','2020-01-21','2020-02-07','2020-02-10','2020-02-11','2020-03-25','2020-03-29','2020-04-02','2020-04-05','2020-04-16','2020-05-06','2020-05-15','2020-06-04','2020-06-08','2020-07-15','2020-08-11','2020-08-14','2020-09-07','2020-09-13','2020-09-24','2020-10-20','2020-11-14'],
+y: ['777.406','712.222','600.87','533.847','457.351','399.233','319.331','299.095','262.026','236.871','226.843','209.674','199.784','195.196','186.401','170.405','165.307','157.59','148.956','138.412','135.144','126.374','121.54','116.156','114.33','114.216','113.531','112.174','110.26','109.686','106.72','102.196'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'Relas'
+};
+
+var MishaCZ  = {
+x: ['2018-03-21','2018-04-13','2020-08-09'],
+y: ['436.237','236.567','131.555'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'MishaCZ'
+};
+
+
+var Deppood  = {
+x: ['2017-12-16','2017-12-28','2018-01-06','2018-01-22','2018-01-22'],
+y: ['294.135','210.161','182.903','165.715','149.161'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'Deppood'
+};
+
+var TroXeriuS  = {
+x: ['2020-02-28'],
+y: ['209.344'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'TroXeriuS'
+};
+
+var Blambl  = {
+x: ['2020-01-04','2020-01-21'],
+y: ['288.857','221.685'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'Blambl'
+};
+
+var Bumbac4  = {
+x: ['2018-02-11','2018-02-11','2018-03-01','2018-03-04','2018-05-18',],
+y: ['387.923','387.923','298.659','271.87','235.557',],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'Bumbac4'
+};
+
+var CutestGirlChara  = {
+x: ['2020-04-16'],
+y: ['243.411'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'CutestGirlChara'
+};
+
+var T0mas45  = {
+x: ['2020-05-06','2020-05-08'],
+y: ['286.773','252.248'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'T0mas45'
+};
+
+var Linkoud  = {
+x: ['2020-11-08','2020-11-13'],
+y: ['338.93','288.161'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'Linkoud'
+};
+
+var TeeeHaaCeee  = {
+x: ['2017-12-17','2017-12-20','2018-01-06',],
+y: ['755.446','482.872','297.441',],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'TeeeHaaCeee'
+};
+
+var Námitka  = {
+x: ['2020-10-04'],
+y: ['314.221'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'Námitka'
+};
+
+var Cryless  = {
+x: ['2017-12-20','2017-12-21'],
+y: ['473.068','453.232'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'Cryless'
+};
+
+var Adam7777  = {
+x: ['2020-03-09'],
+y: ['513.741'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'Adam7777'
+};
+
+var ExtremeGamer  = {
+x: ['2018-03-09'],
+y: ['546.151'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'ExtremeGamer'
+};
+
+var Tomzc  = {
+x: ['2019-05-27'],
+y: ['755.781'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'Tomzc'
+};
+
+var MoneyMonkey  = {
+x: ['2017-12-19'],
+y: ['830.915'],
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5},
+  name:'MoneyMonkey'
+};
+
+var layout = {
+  title: {
+    text:'GOI Interactive Player Progression Graph',
+    font: {
+      family: 'Arial',
+      size: 24
+    },
+    xref: 'paper',
+    x: 0.05,
+  },
+  width: 1750,
+  height: 880,
+	  xaxis: {
+		title: 'D A T E',
+		type: 'date',
+		titlefont: {
+		  family: 'Arial',
+		  size: 13 }
+	  },
+	  yaxis: {
+		title: 'T I M E',
+		titlefont: {
+		  family: 'Arial',
+		  size: 13 }
+	  },
+ };
+ 
+var data = [AggressiveCombo,Relas,MishaCZ,Deppood,TroXeriuS,Blambl,Bumbac4,CutestGirlChara,T0mas45,Linkoud,TeeeHaaCeee,Námitka,Cryless,Adam7777,ExtremeGamer,Tomzc,MoneyMonkey];
+
+Plotly.newPlot('myDiv', data , layout);
+
+<!-- // get player id -->
+<!-- var temprunID = 'yo3n425y'; -->
+<!-- var playersid = ''; -->
+<!-- for( var i = 0 ; i < res.length ; i++){  if( res[i].id == temprunID ) playersid = res[i]['players'][0].id ;  } -->
+<!-- // get player's runs -->
+<!-- var playerRs = new Array(); -->
+<!-- for( var i = 0 ; i < res.length ; i++){  if(res[i]['players'][0].id == playersid) playerRs.push(res[i]);  } playerRs.reverse(); -->
+<!-- //get dates -->
+<!-- var playerDs = ''; -->
+<!-- for( var i = 0 ; i < playerRs.length ; i++){ playerDs += '\''+playerRs[i].submitted.split('T')[0]+'\','; } -->
+<!-- //get times -->
+<!-- var playerTs = ''; -->
+<!-- for( var i = 0 ; i < playerRs.length ; i++){  -->
+<!-- if( playerRs[i]['times']['ingame'] != null ){ var mins = parseFloat( playerRs[i]['times']['ingame'].split('T')[1].split('M')[0] ); var seconds = parseFloat( playerRs[i]['times']['ingame'].split('T')[1].split('M')[1].split('S')[0] ); } -->
+<!-- else -->
+<!-- {var mins = parseFloat( playerRs[i]['times']['primary'].split('T')[1].split('M')[0] ); var seconds = parseFloat( playerRs[i]['times']['primary'].split('T')[1].split('M')[1].split('S')[0] );} -->
+<!-- var tempT = mins*60 + seconds; -->
+<!-- playerTs += '\'' + tempT + '\','  ;} -->
+<!-- console.log('x: ['+playerDs+ '],\ny: ['+playerTs+'],\n');  -->
+
+
+</script>
+</body>
