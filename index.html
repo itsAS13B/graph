@@ -794,6 +794,14 @@ y:['264.442','244.938','229.254','207.135','184.604','174.123','146.781','143.22
   type: 'scatter',mode: 'lines+markers' , line:{width:1.5 , shape: lineShape} ,
   name:'fector',
   hovertemplate:"%{y|%M:%S.%L}"
+};	
+	
+var matthewz = {
+x:['2023-01-25','2023-03-04','2023-03-20','2023-04-07','2023-04-08','2023-04-30'],
+y:['439.010','325.858','287.214','240.982','210.985','179.853'].map(seconds_to_time),
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5 , shape: lineShape} ,
+  name:'fector',
+  hovertemplate:"%{y|%M:%S.%L}"
 };
 
 var layout = {
@@ -825,7 +833,7 @@ var layout = {
 	  },
  };
  
-var data=[blastbolt,leviathan307,yeet,bananenfriet,zyao,chory,peanut,yckzss216,crumpet,the_head_obamid,c7v2,gunshotyou,sky,rhetor1k,wes,justys,garbo,squillybobjoe,papalouie,clappv,stillow,trixo,deadeye,as13b,gamesauce,oreo,fuff,zabbadabbadoo,eclipse,duanhuaxian,davo,tanaka,fmm222,grossi,lyric,pixic,rengj,enslaved,raghav,valmerix,codyumm,aivv,hongcha,niczur,boogybam,some_guy4444,hydrosis,clody,adamyounis,calamity,sladke,loop,norishio,shok,matthew,alphi,schoko,batfish,mohida,aurora,keronari,lockness06,anjo,goiser,relas,zilch,xalvet,hmmmmm,ys,treebo,arusenti,nicholas132,narenkat,ultragirl,sowedu,asdf,crack,vanya,fector,chip,shamrock,seedmaster,kotobukiman,dankman,pata3322,yori_wisp,lumonen,_20dan03,isuzu,aggressivecombo,IAMamount,monty,emiledu,distortion2];
+var data=[blastbolt,leviathan307,yeet,bananenfriet,zyao,chory,peanut,yckzss216,crumpet,the_head_obamid,c7v2,gunshotyou,sky,rhetor1k,wes,justys,garbo,squillybobjoe,papalouie,clappv,stillow,trixo,deadeye,as13b,gamesauce,oreo,fuff,zabbadabbadoo,eclipse,duanhuaxian,davo,tanaka,fmm222,grossi,lyric,pixic,rengj,enslaved,raghav,valmerix,codyumm,aivv,hongcha,niczur,boogybam,some_guy4444,hydrosis,clody,adamyounis,calamity,sladke,loop,norishio,shok,matthew,alphi,schoko,batfish,mohida,aurora,keronari,lockness06,anjo,goiser,relas,zilch,xalvet,hmmmmm,ys,treebo,arusenti,nicholas132,narenkat,ultragirl,sowedu,asdf,crack,vanya,fector,chip,shamrock,seedmaster,kotobukiman,dankman,pata3322,yori_wisp,lumonen,_20dan03,isuzu,aggressivecombo,IAMamount,monty,emiledu,distortion2,matthewz];
 Plotly.newPlot('myDiv', data , layout);
 
 <!-- // get player id -->
