@@ -896,6 +896,14 @@ y:['164.941','147.555','131.509','114.685','111.759','107.256','101.990','92.785
   hovertemplate:"%{y|%M:%S.%L}"
 };
 
+var pogity = {
+x:['2023-09-26','2023-11-02','2023-11-11','2023-12-02'],
+y:['295.889','168.201','149.850','120.972'].map(seconds_to_time),
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5 , shape: lineShape} ,
+  name:'Pogity',
+  hovertemplate:"%{y|%M:%S.%L}"
+};
+
 
 var layout = {
   title: {
@@ -926,7 +934,7 @@ var layout = {
 	  },
  };
  
-var data=[blastbolt,leviathan307,haixi,yeet,justys,slowpoke,bananenfriet,goiser,chory,garbo,peanut,oyama,crumpet,avinas,yckzss216,the_head_obamid,c7v2,gamesauce,gunshotyou,sky,eclipse,davo,rhetor1k,wes,shok,squillybobjoe,papalouie,as13b,clappv,stillow,trixo,deadeye,oreo,fuff,zabbadabbadoo,diavlo,duanhuaxian,tanaka,freeze,niczur,aggressivecombo,fmm222,clody,grossi,lyric,pixic,rengj,enslaved,raghav,valmerix,codyumm,aivv,hongcha,boogybam,some_guy4444,pyked,hydrosis,batfish,adamyounis,calamity,sladke,matthew,loop,norishio,crack,alphi,schoko,mohida,aurora,ted,keronari,lockness06,anjo,relas,zilch,xalvet,hmmmmm,ys,treebo,arusenti,nicholas132,narenkat,ultragirl,sowedu,sploop,asdf,vanya,fector,chip,shamrock,seedmaster,akane,matthewz,kotobukiman,dankman,indev,pata3322,yori_wisp,lumonen,_20dan03,isuzu,IAMamount,emiledu,monty,distortion2];
+var data=[blastbolt,leviathan307,haixi,yeet,justys,slowpoke,bananenfriet,goiser,chory,garbo,peanut,oyama,crumpet,avinas,yckzss216,the_head_obamid,c7v2,gamesauce,gunshotyou,sky,eclipse,davo,rhetor1k,wes,shok,squillybobjoe,papalouie,as13b,clappv,stillow,trixo,deadeye,oreo,fuff,zabbadabbadoo,diavlo,duanhuaxian,tanaka,freeze,niczur,aggressivecombo,fmm222,clody,grossi,lyric,pixic,rengj,enslaved,raghav,valmerix,codyumm,aivv,hongcha,boogybam,some_guy4444,pyked,hydrosis,batfish,adamyounis,calamity,sladke,matthew,loop,norishio,crack,alphi,schoko,mohida,aurora,ted,keronari,lockness06,anjo,relas,zilch,xalvet,hmmmmm,ys,treebo,arusenti,nicholas132,narenkat,ultragirl,sowedu,sploop,asdf,vanya,fector,chip,shamrock,seedmaster,akane,matthewz,kotobukiman,dankman,indev,pata3322,yori_wisp,lumonen,_20dan03,isuzu,IAMamount,emiledu,monty,distortion2,pogity];
 Plotly.newPlot('myDiv', data , layout);
 
 <!-- // get player id -->
