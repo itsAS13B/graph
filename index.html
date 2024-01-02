@@ -904,10 +904,17 @@ y:['295.889','168.201','149.850','120.972','114.919'].map(seconds_to_time),
   hovertemplate:"%{y|%M:%S.%L}"
 };
 
+var josher = {
+x:['2023-07-06','2023-07-11','2023-07-16','2023-08-19','2023-08-22','2023-08-23','2023-10-12','2023-11-15','2023-12-01'],
+y:['273.749','155.788','134.964','125.636','122.163','119.393','105.065','94.359','91.054'].map(seconds_to_time),
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5 , shape: lineShape} ,
+  name:'JosherIsFun',
+  hovertemplate:"%{y|%M:%S.%L}"
+};
 
 var layout = {
   title: {
-    text:'GOI Interactive Player Progression Graph (latest update 31 December 2023)',
+    text:'GOI Interactive Player Progression Graph (latest update 02 January 2024)',
     font: {
       family: 'Arial',
       size: 24
@@ -934,7 +941,7 @@ var layout = {
 	  },
  };
  
-var data=[blastbolt,leviathan307,haixi,yeet,justys,slowpoke,bananenfriet,goiser,chory,garbo,peanut,oyama,crumpet,avinas,yckzss216,the_head_obamid,c7v2,gamesauce,gunshotyou,sky,eclipse,davo,rhetor1k,wes,shok,squillybobjoe,papalouie,as13b,clappv,stillow,trixo,deadeye,oreo,fuff,zabbadabbadoo,diavlo,duanhuaxian,tanaka,freeze,niczur,aggressivecombo,fmm222,clody,grossi,lyric,pixic,rengj,enslaved,raghav,valmerix,codyumm,aivv,hongcha,boogybam,some_guy4444,pyked,hydrosis,batfish,adamyounis,calamity,sladke,matthew,loop,norishio,crack,alphi,schoko,mohida,aurora,ted,keronari,lockness06,anjo,relas,zilch,xalvet,hmmmmm,ys,treebo,arusenti,nicholas132,narenkat,ultragirl,sowedu,sploop,asdf,vanya,fector,chip,shamrock,seedmaster,akane,matthewz,kotobukiman,dankman,indev,pata3322,yori_wisp,lumonen,_20dan03,isuzu,IAMamount,emiledu,monty,distortion2,pogity];
+var data=[blastbolt,leviathan307,haixi,yeet,justys,slowpoke,bananenfriet,goiser,chory,garbo,peanut,oyama,crumpet,avinas,yckzss216,the_head_obamid,c7v2,gamesauce,gunshotyou,sky,eclipse,davo,rhetor1k,wes,shok,squillybobjoe,papalouie,as13b,clappv,stillow,trixo,deadeye,oreo,fuff,zabbadabbadoo,diavlo,duanhuaxian,tanaka,freeze,niczur,aggressivecombo,fmm222,clody,grossi,lyric,pixic,rengj,enslaved,raghav,valmerix,codyumm,aivv,hongcha,boogybam,some_guy4444,pyked,hydrosis,batfish,adamyounis,calamity,sladke,matthew,loop,norishio,crack,alphi,schoko,mohida,aurora,ted,keronari,lockness06,anjo,relas,zilch,xalvet,hmmmmm,ys,treebo,arusenti,nicholas132,narenkat,ultragirl,sowedu,sploop,asdf,vanya,fector,chip,shamrock,seedmaster,akane,josher,matthewz,kotobukiman,dankman,indev,pata3322,yori_wisp,lumonen,_20dan03,isuzu,IAMamount,emiledu,monty,distortion2,pogity];
 Plotly.newPlot('myDiv', data , layout);
 
 <!-- // get player id -->
