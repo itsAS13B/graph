@@ -950,6 +950,33 @@ y:['173.138','150.610','146.683','140.161','136.931','120.761','110.748','106.30
   hovertemplate:"%{y|%M:%S.%L}"
 };
 
+<!-- ** -->
+var orzy = {
+x:['2024-06-12','2024-08-21','2024-09-08','2024-10-02','2024-10-15','2024-12-17','2024-12-21','2024-12-22','2024-12-29'],
+y:['121.369','110.015','104.180','92.936','89.768','83.120','82.571','81.330','74.370'].map(seconds_to_time),
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5 , shape: lineShape} ,
+  name:'orzy',
+  hovertemplate:"%{y|%M:%S.%L}"
+};
+
+<!-- ** -->
+var chaselux = {
+x:['2023-12-09','2024-03-28','2024-04-02','2024-05-14','2024-05-24','2024-07-23','2024-08-21','2024-08-31','2024-09-07','2024-09-10','2024-09-12','2024-10-06','2024-10-12','2024-11-04','2024-12-29'],
+y:['139.333','127.011','125.533','108.884','102.335','93.115','92.452','89.455','86.987','86.655','82.138','81.984','80.759','79.686','74.653'].map(seconds_to_time),
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5 , shape: lineShape} ,
+  name:'chaselux',
+  hovertemplate:"%{y|%M:%S.%L}"
+};
+
+<!-- ** -->
+var kabe = {
+x:['2021-10-28','2021-11-03','2021-11-11','2021-11-25','2021-11-26','2021-11-27','2021-12-14','2022-01-03','2022-01-05','2022-01-06','2022-01-30','2022-03-07','2022-03-17','2022-03-22','2022-03-26','2022-04-05','2022-04-19','2022-05-16','2022-06-08','2022-07-21','2022-07-25','2022-07-31','2022-08-16','2022-11-30','2023-03-21','2024-06-15'],
+y:['141.495','133.094','129.904','128.587','127.483','121.621','119.209','114.209','106.590','105.465','104.652','103.971','103.259','97.957','97.019','95.373','94.308','92.016','87.290','86.834','85.540','83.931','81.624','79.502','79.145','75.243'].map(seconds_to_time),
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5 , shape: lineShape} ,
+  name:'kabe',
+  hovertemplate:"%{y|%M:%S.%L}"
+};
+
 var layout = {
   title: {
     text:'GOI Interactive Player Progression Graph (latest update 19 January 2025)',
@@ -979,7 +1006,7 @@ var layout = {
 	  },
  };
  
-var data=[blastbolt,leviathan307,haixi,yeet,justys,slowpoke,bananenfriet,goiser,chory,garbo,peanut,oyama,crumpet,avinas,yckzss216,the_head_obamid,c7v2,gamesauce,gunshotyou,sky,eclipse,davo,rhetor1k,wes,shok,squillybobjoe,papalouie,as13b,clappv,stillow,SGmeta,trixo,deadeye,oreo,fuff,zabbadabbadoo,diavlo,duanhuaxian,tanaka,freeze,niczur,aggressivecombo,fmm222,clody,grossi,lyric,pixic,rengj,enslaved,raghav,valmerix,codyumm,sfu0,aivv,hongcha,boogybam,some_guy4444,pyked,hydrosis,batfish,adamyounis,calamity,sladke,matthew,loop,norishio,crack,alphi,schoko,mohida,aurora,ted,keronari,lockness06,anjo,relas,zilch,xalvet,hmmmmm,ys,treebo,arusenti,nicholas132,narenkat,ultragirl,sowedu,sploop,asdf,vanya,fector,chip,shamrock,seedmaster,akane,josher,matthewz,kotobukiman,dankman,indev,pata3322,yori_wisp,lumonen,_20dan03,aliraza,isuzu,aclhelzyldwy,IAMamount,emiledu,monty,distortion2,angus];
+var data=[blastbolt,leviathan307,oyama,haixi,SGmeta,yeet,justys,avinas,slowpoke,bananenfriet,chory,gamesauce,goiser,garbo,peanut,crumpet,yckzss216,the_head_obamid,diavlo,c7v2,gunshotyou,sky,eclipse,davo,rhetor1k,wes,shok,as13b,squillybobjoe,papalouie,clappv,stillow,trixo,deadeye,oreo,fuff,zabbadabbadoo,ted,sfu0,duanhuaxian,tanaka,freeze,orzy,niczur,aggressivecombo,chaselux,fmm222,clody,grossi,kabe,lyric,pixic,rengj,raghav,matthew,enslaved,valmerix,codyumm,aivv,hongcha,boogybam,some_guy4444,indev,batfish,adamyounis,pyked,calamity,sladke,crack,hydrosis,loop,norishio,alphi,schoko,matthewz,akane,josher,aclhelzyldwy,angus,mohida,aurora,keronari,lockness06,anjo,relas,zilch,xalvet,hmmmmm,ys,treebo,arusenti,nicholas132,narenkat,ultragirl,sowedu,sploop,asdf,vanya,fector,chip,shamrock,seedmaster,kotobukiman,dankman,pata3322,yori_wisp,lumonen,_20dan03,aliraza,isuzu,IAMamount,emiledu,monty,distortion2];
 Plotly.newPlot('myDiv', data , layout);
 
 <!-- // get player id -->
