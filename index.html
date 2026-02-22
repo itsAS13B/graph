@@ -986,6 +986,35 @@ y:['141.495','133.094','129.904','128.587','127.483','121.621','119.209','114.20
 };
 
 
+<!-- ** -->
+var wenderer = {
+x:['2022-07-30','2022-08-10','2022-08-17','2022-09-21','2022-10-09','2022-10-30','2022-11-07','2022-11-25','2023-01-01','2023-02-04','2023-03-26','2023-04-18','2023-06-29','2023-08-22','2024-03-03','2024-03-10','2024-05-12','2024-05-17','2024-06-14','2025-02-08','2025-03-30','2025-06-07','2025-07-29','2025-08-04'],
+y:['85.602','77.556','76.873','74.968','73.616','72.932','71.835','71.403','69.977','69.642','68.491','66.609','65.844','64.833','64.671','64.160','63.761','63.377','62.461','61.251','61.167','60.673','60.500','59.525'].map(seconds_to_time),
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5 , shape: lineShape} ,
+  name:'Wenderer',
+  hovertemplate:"%{y|%M:%S.%L}"
+};
+
+<!-- ** -->
+var bingb = {
+x:['2021-07-08','2021-07-16','2021-07-25','2021-10-29','2021-12-07','2022-01-24','2022-03-25','2022-05-04','2022-12-27','2022-12-30','2023-08-19','2024-04-21','2024-07-14','2025-01-18','2025-06-20','2025-06-28','2025-09-21'],
+y:['97.869','93.349','86.071','78.204','76.553','75.045','72.453','69.860','67.587','65.961','64.260','63.922','62.787','60.917','60.607','59.778','59.133'].map(seconds_to_time),
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5 , shape: lineShape} ,
+  name:'Tendou_Kisara',
+  hovertemplate:"%{y|%M:%S.%L}"
+};
+
+
+<!-- ** -->
+var hanpidao = {
+x:['2025-07-31','2025-08-11','2025-08-14','2025-09-13','2025-12-17'],
+y:['64.959','64.269','63.582','61.148','60.524'].map(seconds_to_time),
+  type: 'scatter',mode: 'lines+markers' , line:{width:1.5 , shape: lineShape} ,
+  name:'Tendou_Kisara',
+  hovertemplate:"%{y|%M:%S.%L}"
+};
+
+
 
 var td = new Date();
 <!-- ** -->
@@ -1026,7 +1055,7 @@ var layout = {
 	  },
  };
  
-var data=[today,blastbolt,leviathan307,oyama,haixi,SGmeta,yeet,justys,avinas,slowpoke,bananenfriet,chory,gamesauce,goiser,garbo,peanut,crumpet,yckzss216,the_head_obamid,diavlo,c7v2,gunshotyou,sky,eclipse,davo,rhetor1k,wes,shok,as13b,squillybobjoe,papalouie,clappv,stillow,trixo,deadeye,oreo,fuff,zabbadabbadoo,ted,sfu0,duanhuaxian,tanaka,freeze,orzy,niczur,aggressivecombo,chaselux,fmm222,clody,grossi,kabe,lyric,pixic,rengj,raghav,matthew,enslaved,valmerix,codyumm,aivv,hongcha,boogybam,some_guy4444,indev,batfish,adamyounis,pyked,calamity,sladke,crack,hydrosis,loop,norishio,alphi,schoko,matthewz,akane,josher,aclhelzyldwy,angus,mohida,aurora,keronari,lockness06,anjo,relas,zilch,xalvet,hmmmmm,ys,treebo,arusenti,nicholas132,narenkat,ultragirl,sowedu,sploop,asdf,vanya,fector,chip,shamrock,seedmaster,kotobukiman,dankman,pata3322,yori_wisp,lumonen,_20dan03,aliraza,isuzu,IAMamount,emiledu,monty,distortion2];
+var data=[oyama,bingb,wenderer,SGmeta,blastbolt,leviathan307,hanpidao,haixi,yeet,justys,avinas,slowpoke,bananenfriet,chory,gamesauce,goiser,garbo,peanut,crumpet,yckzss216,the_head_obamid,diavlo,c7v2,gunshotyou,sky,eclipse,davo,rhetor1k,wes,shok,as13b,squillybobjoe,papalouie,clappv,stillow,trixo,deadeye,oreo,fuff,zabbadabbadoo,ted,sfu0,duanhuaxian,tanaka,freeze,orzy,niczur,aggressivecombo,chaselux,fmm222,clody,grossi,kabe,lyric,pixic,rengj,raghav,matthew,enslaved,valmerix,codyumm,aivv,hongcha,boogybam,some_guy4444,indev,batfish,adamyounis,pyked,calamity,sladke,crack,hydrosis,loop,norishio,alphi,schoko,matthewz,akane,josher,aclhelzyldwy,angus,mohida,aurora,keronari,lockness06,anjo,relas,zilch,xalvet,hmmmmm,ys,treebo,arusenti,nicholas132,narenkat,ultragirl,sowedu,sploop,asdf,vanya,fector,chip,shamrock,seedmaster,kotobukiman,dankman,pata3322,yori_wisp,lumonen,_20dan03,aliraza,isuzu,IAMamount,emiledu,monty,distortion2];
 Plotly.newPlot('myDiv', data , layout);
 
 <!-- // get player id -->
@@ -1052,5 +1081,6 @@ Plotly.newPlot('myDiv', data , layout);
 </script><svg id="js-plotly-tester" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="position: absolute; left: -10000px; top: -10000px; width: 9000px; height: 9000px; z-index: 1;"><path class="js-reference-point" d="M0,0H1V1H0Z" style="stroke-width: 0px; fill: black;"></path></svg>
 
 <script src="app.js" type="text/javascript"></script></body></html>
+
 
 
