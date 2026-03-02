@@ -1020,7 +1020,7 @@ var td = new Date();
 <!-- ** -->
 var today = {
 x:[formatDate(td),formatDate(td)],
-y:['600.0','59.885'].map(seconds_to_time),
+y:['600.0','60.000'].map(seconds_to_time),
   type: 'scatter',mode: 'lines+markers' , line:{width:1 , shape: lineShape, dash:'dash'} ,
   name:formatDate(td),
   hovertemplate:"%{y|%M:%S.%L}"
@@ -1081,6 +1081,7 @@ Plotly.newPlot('myDiv', data , layout);
 </script><svg id="js-plotly-tester" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="position: absolute; left: -10000px; top: -10000px; width: 9000px; height: 9000px; z-index: 1;"><path class="js-reference-point" d="M0,0H1V1H0Z" style="stroke-width: 0px; fill: black;"></path></svg>
 
 <script src="app.js" type="text/javascript"></script></body></html>
+
 
 
 
